@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (password === "263580") {
                 window.location.href = "security2.html";
             } else {
-                document.getElementById("error-message").innerText = "❌ Incorrect password. Try again!";
+                document.getElementById("error-message").innerText = "bru how do you not know your phone password";
             }
         });
     }
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (anniversary === "06/07/24") {
                 window.location.href = "security3.html";
             } else {
-                document.getElementById("error-message").innerText = "❌ Incorrect anniversary date. Try again!";
+                document.getElementById("error-message").innerText = "we're breaking up wtf";
             }
         });
     }
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (name === "ronit") {
                 window.location.href = "valentine.html"; // ✅ Goes to the final proposal page
             } else {
-                document.getElementById("error-message").innerText = "❌ Incorrect name. Try again!";
+                document.getElementById("error-message").innerText = "you aren't funny btw";
             }
         });
     }
