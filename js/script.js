@@ -2,10 +2,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const noButton = document.getElementById("noButton");
 
     noButton.addEventListener("mouseover", function () {
-        const x = Math.random() * (window.innerWidth - 150); // Ensure it stays within screen width
-        const y = Math.random() * (window.innerHeight - 50); // Ensure it stays within screen height
+        // Get viewport size
+        const maxX = window.innerWidth - noButton.offsetWidth - 20; // Keep inside width
+        const maxY = window.innerHeight - noButton.offsetHeight - 20; // Keep inside height
 
-        noButton.style.position = "absolute"; // Ensures button moves
+        // Generate random X and Y values within boundaries
+        const x = Math.floor(Math.random() * maxX);
+        const y = Math.floor(Math.random() * maxY);
+
+        // Apply new position
+        noButton.style.position = "absolute";
         noButton.style.left = `${x}px`;
         noButton.style.top = `${y}px`;
     });
