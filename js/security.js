@@ -5,12 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const phoneButton = document.getElementById("submitPhonePassword");
     if (phoneButton) {
         phoneButton.addEventListener("click", function () {
-            console.log("Phone password button clicked!");
             let password = document.getElementById("phonePassword").value;
             if (password === "263580") {
                 window.location.href = "security2.html";
             } else {
-                document.getElementById("error-message").innerText = "You don't know your own phone password?";
+                document.getElementById("error-message").innerText = "❌ Incorrect password. Try again!";
             }
         });
     }
@@ -19,26 +18,24 @@ document.addEventListener("DOMContentLoaded", function () {
     const birthdayButton = document.getElementById("submitBirthday");
     if (birthdayButton) {
         birthdayButton.addEventListener("click", function () {
-            console.log("Birthday button clicked!");
             let birthday = document.getElementById("birthday").value;
-            if (birthday === "06/07/24") {
+            if (birthday === "04/21/06") {
                 window.location.href = "security3.html";
             } else {
-                document.getElementById("error-message").innerText = "How could you forget our anniversary, get it right or we are breaking up";
+                document.getElementById("error-message").innerText = "❌ Incorrect birthday. Try again!";
             }
         });
     }
 
-    // ✅ Boyfriend's Name Validation - Redirects to Final Proposal Page
+    // ✅ Boyfriend's Name Validation - Redirects to Valentine Page
     const boyfriendButton = document.getElementById("submitBoyfriend");
     if (boyfriendButton) {
         boyfriendButton.addEventListener("click", function () {
-            console.log("Boyfriend name button clicked!");
             let name = document.getElementById("boyfriendName").value.toLowerCase().trim();
             if (name === "ronit") {
-                window.location.href = "valentine.html";  // ✅ Redirects to the final proposal page
+                window.location.href = "valentine.html"; // ✅ Goes to the final proposal page
             } else {
-                document.getElementById("error-message").innerText = "you aren't funny.";
+                document.getElementById("error-message").innerText = "❌ Incorrect name. Try again!";
             }
         });
     }
