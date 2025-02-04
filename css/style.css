@@ -15,8 +15,6 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    
-    /* Move the box higher */
     position: absolute;
     top: 35%;
     left: 50%;
@@ -46,6 +44,7 @@ h1 {
 .no-btn {
     background-color: #cccccc;
     color: black;
+    position: relative;
 }
 
 .btn:hover {
@@ -57,7 +56,7 @@ h1 {
     color: white;
 }
 
-/* Input fields styling for security pages */
+/* Input fields for security pages */
 input {
     padding: 10px;
     font-size: 16px;
@@ -68,7 +67,7 @@ input {
     text-align: center;
 }
 
-/* Error message styling */
+/* Error messages */
 .error {
     color: red;
     font-weight: bold;
