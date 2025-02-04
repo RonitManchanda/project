@@ -1,12 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const noButton = document.getElementById("noButton");
+    console.log("Security script loaded successfully!");
 
-    noButton.addEventListener("mouseover", function () {
-        const x = Math.random() * (window.innerWidth - 100);
-        const y = Math.random() * (window.innerHeight - 50);
-
-        noButton.style.position = "absolute";
-        noButton.style.left = `${x}px`;
-        noButton.style.top = `${y}px`;
-    });
+    // ✅ Final Step: Redirect to Valentine Page
+    const boyfriendButton = document.getElementById("submitBoyfriend");
+    if (boyfriendButton) {
+        boyfriendButton.addEventListener("click", function () {
+            let name = document.getElementById("boyfriendName").value.toLowerCase().trim();
+            if (name === "ronit") {
+                window.location.href = "valentine.html"; // Redirects to final page
+            } else {
+                document.getElementById("error-message").innerText = "❌ Incorrect name. Try again!";
+            }
+        });
+    }
 });
