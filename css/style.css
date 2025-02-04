@@ -4,10 +4,13 @@ body {
     background-color: #ffe6f2;
     margin: 0;
     padding: 0;
+    overflow: hidden; /* Prevents scrolling when button moves */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
+    position: relative;
 }
 
 .container {
@@ -44,8 +47,8 @@ h1 {
 .no-btn {
     background-color: #cccccc;
     color: black;
-    position: absolute; /* Enables button movement */
-    transition: left 0.2s ease, top 0.2s ease; /* Smooth movement */
+    position: absolute;
+    transition: left 0.2s ease, top 0.2s ease;
 }
 
 .btn:hover {
@@ -55,21 +58,4 @@ h1 {
 .no-btn:hover {
     background-color: #ff4d6d;
     color: white;
-}
-
-/* Input fields for security pages */
-input {
-    padding: 10px;
-    font-size: 16px;
-    margin: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 80%;
-    text-align: center;
-}
-
-/* Error messages */
-.error {
-    color: red;
-    font-weight: bold;
 }
