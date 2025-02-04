@@ -1,11 +1,52 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
-    padding: 50px;
+    background-color: #ffe6f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    color: #333;
+    color: #ff4d6d;
 }
 
+.btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.yes-btn {
+    background-color: #ff4d6d;
+    color: white;
+    text-decoration: none;
+}
+
+.no-btn {
+    background-color: #cccccc;
+    color: black;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.no-btn:hover {
+    background-color: #ff4d6d;
+    color: white;
+}
