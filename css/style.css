@@ -70,7 +70,7 @@ h1 {
 
 /* ✅ Yes Page Background */
 .yes-page {
-    background: url("../img/cute.jpeg") no-repeat center center fixed;
+    background: url("../img/cute.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
