@@ -3,26 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS Programming Project Submission</title>
+    <title>CS Project - Test Environment</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Dark IDE-style background */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: "Courier New", monospace;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+            width: 80%;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 20px;
+            color: #00ff99;
+        }
+
+        /* Fake Code Editor */
+        .code-editor {
+            background: #2d2d2d;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: pre;
+            overflow-x: auto;
+            border: 1px solid #444;
+            color: #ddd;
+            height: 250px;
+        }
+
+        /* Fake syntax colors */
+        .keyword { color: #569cd6; }
+        .function { color: #dcdcaa; }
+        .string { color: #ce9178; }
+        .comment { color: #6a9955; }
+
+        /* Run Button */
+        #runCode {
+            background-color: #00ff99;
+            color: black;
+            font-size: 16px;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        #runCode:hover {
+            background-color: #00cc77;
+        }
+
+        /* Fake Output Terminal */
+        .output {
+            background: #000;
+            color: #0f0;
+            font-size: 14px;
+            padding: 10px;
+            margin-top: 10px;
+            height: 50px;
+            border-radius: 5px;
+            border: 1px solid #444;
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>CS Programming Project Submission</h1>
-        <p>Please confirm your submission for the Computer Science project.</p>
-        
-        <p><strong>Project Title:</strong> Web Security & Authentication</p>
-        <p><strong>Instructor:</strong> Dr. Alan Turing</p>
-        <p><strong>Due Date:</strong> February 5, 2025</p>
+        <h1>CS Project: Debug & Run the Code</h1>
+        <p>Welcome to your test environment. Please analyze the code below and run it to continue.</p>
 
-        <p>Click the button below to finalize your submission.</p>
+        <div class="code-editor">
+            <span class="keyword">def</span> <span class="function">fake_security_check</span>():
+            <br> <span class="keyword">print</span>(<span class="string">"Validating user credentials..."</span>)
+            <br> <span class="keyword">return</span> <span class="string">"Access Granted"</span>
+            <br><br><span class="comment"># Run the function below</span>
+            <br><span class="function">fake_security_check</span>()
+        </div>
 
-        <button class="btn" id="submitProject">Submit Project</button>
+        <button id="runCode">Run Code</button>
+        <div class="output" id="outputBox">Processing...</div>
     </div>
 
     <script>
-        document.getElementById("submitProject").addEventListener("click", function () {
-            window.location.href = "welcome.html";
+        document.getElementById("runCode").addEventListener("click", function () {
+            let output = document.getElementById("outputBox");
+            output.style.display = "block";
+            setTimeout(() => {
+                output.innerText = "Compilation Successful. Proceeding...";
+                setTimeout(() => {
+                    window.location.href = "welcome.html";
+                }, 1500);
+            }, 2000);
         });
     </script>
 </body>
