@@ -44,7 +44,8 @@ h1 {
 .no-btn {
     background-color: #cccccc;
     color: black;
-    position: relative;
+    position: absolute; /* Enables button movement */
+    transition: left 0.2s ease, top 0.2s ease; /* Smooth movement */
 }
 
 .btn:hover {
