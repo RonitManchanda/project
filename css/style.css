@@ -5,7 +5,7 @@ body {
     background-color: #ffe6f2;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevents scrolling when button moves */
+    overflow: hidden; /* Prevents scrolling when No button moves */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +70,7 @@ h1 {
 
 /* ✅ Yes Page Background */
 .yes-page {
-    background: url("../img/us.jpg") no-repeat center center fixed;
+    background: url("../img/cute.jpeg") no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
