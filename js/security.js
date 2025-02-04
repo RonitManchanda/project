@@ -14,15 +14,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // ✅ Birthday Validation
-    const birthdayButton = document.getElementById("submitBirthday");
-    if (birthdayButton) {
-        birthdayButton.addEventListener("click", function () {
-            let birthday = document.getElementById("birthday").value;
-            if (birthday === "04/21/06") {
+    // ✅ Anniversary Date Validation (MM/DD/YY)
+    const anniversaryButton = document.getElementById("submitAnniversary");
+    if (anniversaryButton) {
+        anniversaryButton.addEventListener("click", function () {
+            let anniversary = document.getElementById("anniversary").value.trim();
+            if (anniversary === "06/07/24") {
                 window.location.href = "security3.html";
             } else {
-                document.getElementById("error-message").innerText = "❌ Incorrect birthday. Try again!";
+                document.getElementById("error-message").innerText = "❌ Incorrect anniversary date. Try again!";
             }
         });
     }
