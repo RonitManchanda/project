@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (password === "263580") {
                 window.location.href = "security2.html";
             } else {
-                document.getElementById("error-message").innerText = "❌ Incorrect password. Try again!";
+                document.getElementById("error-message").innerText = "❌ You don't know your own phone password?";
             }
         });
     }
@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
         birthdayButton.addEventListener("click", function () {
             console.log("Birthday button clicked!"); // Debugging check
             let birthday = document.getElementById("birthday").value;
-            if (birthday === "04/21/06") {
+            if (birthday === "06/07/24") {
                 window.location.href = "security3.html";
             } else {
-                document.getElementById("error-message").innerText = "❌ Incorrect birthday. Try again!";
+                document.getElementById("error-message").innerText = "How could you forget our anniversary??";
             }
         });
     }
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (name === "ronit") {
                 window.location.href = "index.html";
             } else {
-                document.getElementById("error-message").innerText = "❌ Incorrect name. Try again!";
+                document.getElementById("error-message").innerText = "You're not funny, try again.";
             }
         });
     }
