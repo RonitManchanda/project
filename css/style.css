@@ -18,7 +18,7 @@ body {
     
     /* Move the box higher */
     position: absolute;
-    top: 35%;  /* Adjust this value to move it higher/lower */
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -55,4 +55,21 @@ h1 {
 .no-btn:hover {
     background-color: #ff4d6d;
     color: white;
+}
+
+/* Input fields styling for security pages */
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-weight: bold;
 }
