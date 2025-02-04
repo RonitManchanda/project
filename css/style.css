@@ -1,3 +1,4 @@
+/* ✅ General Page Styling */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -28,6 +29,7 @@ h1 {
     color: #ff4d6d;
 }
 
+/* ✅ Button Styling */
 .btn {
     font-size: 18px;
     padding: 10px 20px;
@@ -47,8 +49,8 @@ h1 {
 .no-btn {
     background-color: #cccccc;
     color: black;
-    position: absolute;
-    transition: left 0.2s ease, top 0.2s ease;
+    position: absolute; /* Enables button movement */
+    transition: left 0.2s ease, top 0.2s ease; /* Smooth movement */
 }
 
 .btn:hover {
@@ -58,4 +60,46 @@ h1 {
 .no-btn:hover {
     background-color: #ff4d6d;
     color: white;
+}
+
+/* ✅ Keep "No" Button Inside the Page */
+.no-btn {
+    position: absolute;
+    transition: left 0.2s ease, top 0.2s ease;
+}
+
+/* ✅ Yes Page Background */
+.yes-page {
+    background: url("../img/us.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* ✅ Text Overlay for Readability */
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay to make text readable */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ✅ Input Fields for Security Pages */
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+/* ✅ Error Message Styling */
+.error {
+    color: red;
+    font-weight: bold;
 }
